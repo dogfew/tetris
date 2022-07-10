@@ -12,7 +12,6 @@ class Desk(pygame.sprite.Group):
     def check(self, score):
         for cube_1 in self:
             bottom = cube_1.rect.bottom
-            print(bottom)
             if bottom == 250:
                 self.empty()
                 return 0
