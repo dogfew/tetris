@@ -1,5 +1,7 @@
-import pygame
 import sys
+
+import pygame
+
 from desk import Desk
 from cube import Figure, NextCubes
 
