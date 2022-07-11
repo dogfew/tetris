@@ -5,11 +5,11 @@ class Desk(pygame.sprite.Group):
     def __init__(self):
         super().__init__()
 
-    def draw(self, screen):
+    def draw(self, screen: pygame.display) -> None:
         for cube in self:
-            cube.draw(screen, color='red')
+            cube.draw(screen)
 
-    def check(self, score):
+    def check(self, score: int) -> int:
         for cube_1 in self:
             bottom = cube_1.rect.bottom
             if bottom == 250:
