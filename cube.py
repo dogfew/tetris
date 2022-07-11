@@ -15,7 +15,7 @@ class Cube(pygame.sprite.Sprite):
     def draw(self, screen: pygame.display):
         pygame.draw.rect(screen, self.color, (self.x, self.y, self.width, self.height))
         pygame.draw.rect(screen, '#3c3c3c', self.rect, 5)
-        pygame.draw.rect(screen, '#d8d8d8', self.rect, 1)
+        pygame.draw.rect(screen, '#ffffff', self.rect, 1)
 
     @property
     def rect(self):
@@ -39,11 +39,11 @@ class NextCubes(pygame.sprite.Group):
 
     def draw(self, screen: pygame.display):
         for cube in self:
-            rect = (cube.x, cube.y - 175, 50, 50)
+            rect = (cube.x, cube.y - 175, cube.width, cube.height)
             rect = list(i * 4 / 5 for i in rect)
             pygame.draw.rect(screen, self.color, rect)
             pygame.draw.rect(screen, '#3c3c3c', rect, 5)
-            pygame.draw.rect(screen, '#d8d8d8', rect, 1)
+            pygame.draw.rect(screen, '#ffffff', rect, 1)
 
 
 class Figure(pygame.sprite.Group):
