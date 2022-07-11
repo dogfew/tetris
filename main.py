@@ -82,4 +82,3 @@ if __name__ == '__main__':
     main(background_color_1,
          background_color_2,
          colors_of_cubes)
-#
