@@ -1,5 +1,6 @@
 import pygame
 import numpy as np
+
 from desk import Desk
 from random import choice
 
