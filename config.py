@@ -13,9 +13,9 @@ start_speed: int = 150
 max_speed: int = 150
 speed_step: int = 50
 
-width: int = 18
-height: int = 25
-size: int = 30
+width: int = 10
+height: int = 14
+size: int = 50
 
 borders: int = size // 10
 gap: int = 1
