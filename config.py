@@ -9,7 +9,7 @@ cube_colors: list = ["#fff7b3", "#ff7777",
                      "#ffc1b3", "#ffb3f0",
                      "#b8b3ff", "#b3ffc9"]
 
-start_speed: int = 150
+start_speed: int = 750
 max_speed: int = 150
 speed_step: int = 50
 
